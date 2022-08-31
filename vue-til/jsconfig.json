@@ -5,6 +5,9 @@
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
+      "~/*": [
+        "./*"
+      ],
       "@/*": [
         "src/*"
       ]
@@ -14,6 +17,10 @@
       "dom",
       "dom.iterable",
       "scripthost"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
     ]
   }
 }
